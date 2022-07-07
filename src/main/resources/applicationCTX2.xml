@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="student2" class="com.gyojincompany.test.Student">
@@ -15,5 +17,13 @@
 		<property name="weight" value="80"></property>
 		<property name="height" value="180"></property>
 	</bean>
+	
+	<bean id="family" class="com.gyojincompany.test.Family" c:papaName="홍아빠" c:mamiName="홍엄마" p:sisterName="홍자매">
+		<property name="brotherName">
+			<value>홍형제</value>
+		</property>
+	
+	</bean>
+	
 	
 </beans>

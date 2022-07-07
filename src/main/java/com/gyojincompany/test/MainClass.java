@@ -27,6 +27,12 @@ public class MainClass {
 		System.out.println(student2.getName());
 		System.out.println(student2.getHobbys());
 		
+		Family family = ctx.getBean("family",Family.class);
+		System.out.println(family.getPapaName());
+		System.out.println(family.getMamiName());
+		System.out.println(family.getSisterName());
+		System.out.println(family.getBrotherName());
+		
 		
 		ctx.close();
 		
